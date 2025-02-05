@@ -1,17 +1,19 @@
 namespace Calculadora
 {
 
-    class Operacoes
-    {
+   class Operacoes
+   {
 
-        public static void RealizarAdicao(
-         decimal var1,
-         decimal var2
+      public static void RealizarAdicao(
+         decimal valor1,
+         decimal valor2
+       )
+      {
+       
 
-        )
-        {
-            Console.WriteLine($"A soma dos valores {var1} e {var2} é: {var1 + var2} ");
-        }
-        
-    }
+         decimal soma = valor1 + valor2;
+         Console.WriteLine($"A soma dos valores {valor1} e {valor2} é: {soma}");
+      }
+   }
+
 }
