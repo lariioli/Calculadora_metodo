@@ -1,0 +1,3 @@
+﻿using Ola;
+
+Cumprimento.ImprimirOla();
