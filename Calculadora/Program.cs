@@ -1,3 +1,3 @@
-﻿using Ola;
+﻿using Calculadora;
 
-Cumprimento.ImprimirOla();
+Operacoes.RealizarAdicao(5, 2);
