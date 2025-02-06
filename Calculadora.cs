@@ -1,4 +1,4 @@
-//using System.Runtime.InteropServices;
+using Layout;
 
 namespace Calculadora
 {
@@ -9,20 +9,27 @@ namespace Calculadora
       public static decimal ObterValores()
       {
       repetir:
-          Console.Write("Informe o valor: ");
-          if (!decimal.TryParse(Console.ReadLine(), out decimal valor))
+          Formatacao.Cor("Informe o valor: ", ConsoleColor.Yellow);
+          Console.ForegroundColor = ConsoleColor.Cyan;
+          string input = Console.ReadLine();
+          Console.ResetColor(); 
+
+          if (!decimal.TryParse(input, out decimal valor))
           {
-            Console.WriteLine("Valor inválido! ");
+            Formatacao.Cor("Valor inválido! ", ConsoleColor.Red);
             goto repetir;
           }
-          else
-          {
             return valor;
-          }
+        
       }
       public static void RealizarAdicao(decimal valor1, decimal valor2)
       {
-        Console.WriteLine($"A soma dos valores é: {valor1 + valor2} ");
+        Formatacao.Cor($"A soma dos valores ", ConsoleColor.Green);
+        Formatacao.Cor($"{valor1} ", ConsoleColor.Cyan);
+        Formatacao.Cor($"e ", ConsoleColor.Green);
+        Formatacao.Cor($"{valor2} ", ConsoleColor.Cyan);
+        Formatacao.Cor($"é: ", ConsoleColor.Green);
+        Formatacao.Cor($"{valor1 + valor2}\n ", ConsoleColor.Cyan);
       }
    }
 
