@@ -2,34 +2,53 @@ using Layout;
 
 namespace Calculadora
 {
-
    class Operacoes
    {
-      
       public static decimal ObterValores()
       {
       repetir:
-          Formatacao.Cor("Informe o valor: ", ConsoleColor.Yellow);
-          Console.ForegroundColor = ConsoleColor.Cyan;
+          Formatacao.Cor("\nInforme o valor: ", ConsoleColor.Cyan);
+          Console.ForegroundColor = ConsoleColor.Magenta;
           string input = Console.ReadLine();
           Console.ResetColor(); 
 
           if (!decimal.TryParse(input, out decimal valor))
           {
-            Formatacao.Cor("Valor inválido! ", ConsoleColor.Red);
+            Formatacao.Cor("Valor inválido!\n", ConsoleColor.Red);
             goto repetir;
           }
             return valor;
-        
       }
       public static void RealizarAdicao(decimal valor1, decimal valor2)
       {
-        Formatacao.Cor($"A soma dos valores ", ConsoleColor.Green);
-        Formatacao.Cor($"{valor1} ", ConsoleColor.Cyan);
-        Formatacao.Cor($"e ", ConsoleColor.Green);
-        Formatacao.Cor($"{valor2} ", ConsoleColor.Cyan);
-        Formatacao.Cor($"é: ", ConsoleColor.Green);
-        Formatacao.Cor($"{valor1 + valor2}\n ", ConsoleColor.Cyan);
+        MostrarResultado("soma", valor1, valor2, valor1 + valor2);
+      }
+      public static void RealizarSubtracao(decimal valor1, decimal valor2)
+      {
+        MostrarResultado("subtração", valor1, valor2, valor1 - valor2);
+      }
+      public static void RealizarMultiplicacao(decimal valor1, decimal valor2)
+      {
+        MostrarResultado("multiplicação", valor1, valor2, valor1 * valor2);
+      }
+      public static void RealizarDivisao(decimal valor1, decimal valor2)
+      {
+        if (valor2 == 0)
+        {
+          Formatacao.Cor("Erro: Divisão por zero!/n", ConsoleColor.Red);
+          return;
+        }
+          MostrarResultado("divisão", valor1, valor2, valor1 / valor2);
+      }
+      private static void MostrarResultado(string operacao, decimal valor1, decimal valor2, decimal resultado)
+      {
+        Formatacao.Cor($"O resultado da {operacao} ", ConsoleColor.Cyan);
+        Formatacao.Cor($"de ", ConsoleColor.Cyan);
+        Formatacao.Cor($"{valor1} ", ConsoleColor.Magenta);
+        Formatacao.Cor($"e ", ConsoleColor.Cyan);
+        Formatacao.Cor($"{valor2} ", ConsoleColor.Magenta);
+        Formatacao.Cor($"é: ", ConsoleColor.Cyan);
+        Formatacao.Cor($"{resultado}\n", ConsoleColor.Magenta);
       }
    }
 
