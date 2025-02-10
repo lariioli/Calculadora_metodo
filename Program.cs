@@ -44,6 +44,7 @@ class Program
                 Formatacao.Cor("Opção inválida! Tente novamente.\n", ConsoleColor.Red);
                 break;
             }
+            Formatacao.Cor("\nPressione qualquer tecla para continuar... ", ConsoleColor.Green);
             Console.ReadKey();
         }
     }
