@@ -47,7 +47,7 @@ namespace Calculadora
         Formatacao.Cor($"{valor1} ", ConsoleColor.Magenta);
         Formatacao.Cor($"e ", ConsoleColor.Cyan);
         Formatacao.Cor($"{valor2} ", ConsoleColor.Magenta);
-        Formatacao.Cor($"é ", ConsoleColor.Cyan);
+        Formatacao.Cor($"é: ", ConsoleColor.Cyan);
         Formatacao.Cor($"{resultado}\n", ConsoleColor.Magenta);
       }
    }
