@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lorrayne\\.nuget\\packages\\": {}
+    "C:\\Users\\Alunos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lorrayne\\Documents\\Larissa\\Calculadora_metodo\\Calculadora.csproj",
+      "projectUniqueName": "C:\\Users\\Alunos\\OneDrive\\Documents\\Larissa\\Calculadora_metodo\\Calculadora.csproj",
       "projectName": "Calculadora",
-      "projectPath": "C:\\Users\\Lorrayne\\Documents\\Larissa\\Calculadora_metodo\\Calculadora.csproj",
-      "packagesPath": "C:\\Users\\Lorrayne\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lorrayne\\Documents\\Larissa\\Calculadora_metodo\\obj\\",
+      "projectPath": "C:\\Users\\Alunos\\OneDrive\\Documents\\Larissa\\Calculadora_metodo\\Calculadora.csproj",
+      "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alunos\\OneDrive\\Documents\\Larissa\\Calculadora_metodo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lorrayne\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
